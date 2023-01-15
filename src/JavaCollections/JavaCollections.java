@@ -35,15 +35,21 @@ public class JavaCollections {
 		vCustomers.add(new Customer("Jimmy", "Tan", "jimmy@email.com"));
 		vCustomers.add(new Customer("Sally", "Yeh", "sally@email.com"));
 		
-		Iterator<Customer> vIter = vCustomers.iterator();
+
 		
 		System.out.println("");
 		System.out.println("Vector");
 		System.out.println("");
 		
-		while (vIter.hasNext()) {
-			
-			Customer customer = (Customer) vIter.next();
+//		Iterator<Customer> vIter = vCustomers.iterator();
+		
+//		while (vIter.hasNext()) {
+//			
+//			Customer customer = (Customer) vIter.next();
+//			System.out.println(customer.toString());
+//		}
+		
+		for (Customer customer : vCustomers) {
 			System.out.println(customer.toString());
 		}
 		
@@ -53,15 +59,21 @@ public class JavaCollections {
 		sCustomers.add(new Customer("Jimmy", "Tan", "jimmy@email.com"));
 		sCustomers.add(new Customer("Sally", "Yeh", "sally@email.com"));
 		
-		Iterator<Customer> sIter = sCustomers.iterator();
+
 		
 		System.out.println("");
 		System.out.println("Stack");
 		System.out.println("");
 		
-		while (sIter.hasNext()) {
-			
-			Customer customer = (Customer) sIter.next();
+//		Iterator<Customer> sIter = sCustomers.iterator();
+		
+//		while (sIter.hasNext()) {
+//			
+//			Customer customer = (Customer) sIter.next();
+//			System.out.println(customer.toString());
+//		}
+		
+		for (Customer customer : sCustomers) {
 			System.out.println(customer.toString());
 		}
 		
@@ -78,13 +90,17 @@ public class JavaCollections {
 		pq.add(20);
 		pq.add(2);
 		
-		Iterator<Integer> pqIter = pq.iterator();
+//		Iterator<Integer> pqIter = pq.iterator();
+//		
+//		while (pqIter.hasNext()) {
+//			
+//			Integer i = pqIter.next();
+//			System.out.println(i);
+//		}
 		
-		while (pqIter.hasNext()) {
-			
-			Integer i = pqIter.next();
+		for (Integer i : pq) {
 			System.out.println(i);
-		}
+		}		
 		
 		System.out.println("");
 		System.out.println("Priority");
