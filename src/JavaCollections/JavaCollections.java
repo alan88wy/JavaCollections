@@ -12,11 +12,11 @@ public class JavaCollections {
 		customers.add(new Customer("James", "Bond", "jb007@mi6.gov.uk"));
 		customers.add(new Customer("Jimmy", "Tan", "jimmy@email.com"));
 		customers.add(new Customer("Sally", "Yeh", "sally@email.com"));
-		
-		Iterator<Customer> iter = customers.iterator();
-		
+				
 		System.out.println("Array List");
 		System.out.println("");
+		
+//		Iterator<Customer> iter = customers.iterator();
 		
 //		while (iter.hasNext()) {
 //			
